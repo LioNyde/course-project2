@@ -154,6 +154,25 @@ li > a:hover {
    margin: 10px;
 }
 
+/*   BOTTOM   */
+
+
+.message > p{
+   font-size: 20px;
+   padding: 10px 20px;
+   margin: 10px 10px;
+   text-align: left;
+   font-style: italic;
+   font-weight: none;
+}
+.message > span {
+   text-align: right;
+   font-weight: bold;
+}
+ * {
+    border: 2px solid black;
+ }
+
 /*   MEDIA QUERY  */
 @media only screen and (min-width: 768px){
    .header { font-size: 20px; }
