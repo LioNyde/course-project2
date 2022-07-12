@@ -9,7 +9,7 @@
 
 .wrap > * {
    padding: 10px;   
-   margin: 10px;
+   margin: 5px;
    flex: 1 100%;
    border-radius: 10px;
 }
@@ -215,6 +215,23 @@ li > a:hover {
    font-size: 12px;
    justify-content: center;
    align-items: center;
+}
+
+/*   CONTENTS   */
+
+.content {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   align-items: center;
+   height: 500px;
+   background: #1F2937;
+}
+
+.content > span{
+   text-align: center;
+   font-size: 15px;
+   color: white;
 }
 
 
