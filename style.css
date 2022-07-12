@@ -24,7 +24,7 @@
 }
 .footer {
    background: lightblue;
-   height: 80px;
+   height: 70px;
 }
 
 /*   HEADER   */
@@ -36,7 +36,7 @@
    flex-shrink: 1;
    gap: 3px;
 }
-.logo > img {
+a > img {
    height: 50px;
    width: 50px;
    border-radius: 90px; 
@@ -126,7 +126,7 @@ li > a:hover {
 /*   MED   */
 
 .med {
-   background: lightcyan;
+   background: white;
    display: flex;
    height: auto;
    justify-content: center;
@@ -156,6 +156,9 @@ li > a:hover {
 
 /*   BOTTOM   */
 
+.bottom {
+   background: #E5E7EB;
+}
 
 .message > p{
    font-size: 20px;
@@ -166,9 +169,53 @@ li > a:hover {
    font-weight: none;
 }
 .message > span {
-   text-align: right;
    font-weight: bold;
 }
+
+/*   INFO   */
+
+.start {
+   display: flex;
+   flex-flow: row wrap;
+   text-align: left;
+   justify-content: flex-start;
+   align-items: left;
+   background: #3882F6;
+   padding: 15px;
+   border-radius: 10px;
+   color: white;
+   font-weight: extra-bold;
+}
+
+.last {
+   padding: 15px;
+}
+.signup {
+   width: 100%;
+}
+.start > a {
+   text-decoration: none;
+   margin: 10px;
+   border: 2px solid white;
+   padding: 10px;
+   border-radius: 10px;
+   color: white;
+}
+.start > a:hover { 
+   color: black; 
+   background: white;
+}
+
+.footer {
+   display: flex;
+   margin: 1px;
+   background: #1F2937;
+   color: white;
+   font-size: 12px;
+   justify-content: center;
+   align-items: center;
+}
+
 
 /*   MEDIA QUERY  */
 @media only screen and (min-width: 600px){
@@ -183,6 +230,17 @@ li > a:hover {
    .article {
       width: 50%;
    }
-   
    .drawer { flex-flow: row; }
+   
+   .start {
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+   }
+   .button {
+      padding: 10px 70px;
+   }
+   .signup {
+      width: 70%;
+   }
 }
